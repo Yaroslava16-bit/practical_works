@@ -1,0 +1,141 @@
+/* ===== Селектор по тегу ===== */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: #2c3e50;
+    background-color: #fafafa;
+}
+
+h1 {
+    color: #1a237e;
+}
+
+/* ===== Селектор по классу ===== */
+.main-header {
+    background-color: #e8eaf6;
+    padding: 25px;
+    border-bottom: 3px solid #3f51b5;
+}
+
+.subtitle {
+    font-style: italic;
+    color: #5c6bc0;
+}
+
+/* ===== Селектор по ID ===== */
+#site-title {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+/* ===== Дочерний селектор ===== */
+.content > article {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 4px solid #3f51b5;
+}
+
+/* ===== Селектор потомков ===== */
+.post p {
+    margin-bottom: 12px;
+}
+
+/* ===== Соседний селектор ===== */
+h2 + p {
+    font-weight: bold;
+    font-size: 1.05em;
+}
+
+/* ===== Селектор по классу .card ===== */
+.card {
+    border: 2px solid #c5cae9;
+    padding: 18px;
+    border-radius: 8px;
+    background-color: #f5f5ff;
+}
+
+/* ===== Каскад ===== */
+p {
+    color: #333;
+    font-size: 15px;
+}
+
+.post p {
+    color: #2e7d32;
+}
+
+.featured-post p {
+    color: #1b5e20;
+}
+
+.featured-post .intro {
+    color: #6a1b9a;
+    font-size: 17px;
+}
+
+/* ===== Специфичность ===== */
+.important {
+    color: #c62828;
+    font-weight: bold;
+}
+
+li.important {
+    color: #b71c1c;
+    text-decoration: underline;
+}
+
+ul li {
+    color: #1565c0;
+}
+
+.important {
+    color: #ef6c00 !important;
+}
+
+/* ===== Наследование ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #2c3e50;
+}
+
+.card {
+    border: 2px solid #3949ab;
+    padding: inherit;
+}
+
+.examples {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* ===== Псевдоклассы ===== */
+li:hover {
+    background-color: #fff9c4;
+    cursor: pointer;
+}
+
+li:nth-child(odd) {
+    background-color: #f0f2ff;
+}
+
+.main-header:hover {
+    background-color: #d1d9ff;
+    transition: background-color 0.3s ease;
+}
+
+/* ===== Псевдоэлементы ===== */
+p::first-line {
+    font-weight: bold;
+}
+
+.post h2::after {
+    content: " ♪";
+    color: #ffb300;
+}
+
+.card::before {
+    content: "→ ";
+    color: #43a047;
+}
