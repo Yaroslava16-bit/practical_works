@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Верстка по макету</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-text">Company</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Главная</a></li>
+                    <li><a href="#about" class="nav-link">О нас</a></li>
+                    <li><a href="#services" class="nav-link">Услуги</a></li>
+                    <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
+                    <li><a href="#contact" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="cta-button">Связаться</button>
+        </div>
+    </header>
+
+    <!-- Hero секция -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Создаем цифровые продукты мирового класса</h1>
+                <p class="hero-description">
+                    Мы помогаем бизнесу расти с помощью современных технологий и продуманного дизайна
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary">Начать проект</button>
+                    <button class="btn btn-secondary">Узнать больше</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="https://via.placeholder.com/600x400" alt="Hero изображение" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция преимуществ -->
+    <section class="features" id="services">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Скорость</h3>
+                    <p class="feature-description">Быстрая разработка и запуск проектов</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3 class="feature-title">Качество</h3>
+                    <p class="feature-description">Высокое качество кода и дизайна</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛠</div>
+                    <h3 class="feature-title">Поддержка</h3>
+                    <p class="feature-description">Постоянная техническая поддержка</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <p>&copy; 2024 Company. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
