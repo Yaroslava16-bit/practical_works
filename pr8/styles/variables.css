@@ -1,0 +1,37 @@
+/* Цвета из макета */
+:root {
+    --primary-color: #1A1A1A;
+    --secondary-color: #5CB85C;
+    --accent-color: #4CAF50;
+    
+    --text-primary: #1A1A1A;
+    --text-secondary: #666666;
+    --text-light: #FFFFFF;
+    
+    --bg-light: #FFFFFF;
+    --bg-dark: #F8F9FA;
+    --bg-gray: #F0F0F0;
+    
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+    --shadow-md: 0 4px 8px rgba(0,0,0,0.1);
+    --shadow-lg: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Типографика из макета */
+:root {
+    --font-family-primary: 'Inter', sans-serif;
+    
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+    --font-size-4xl: 2.25rem;
+    --font-size-5xl: 3rem;
+    
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.75;
+}
