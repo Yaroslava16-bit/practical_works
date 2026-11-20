@@ -1,0 +1,52 @@
+### Проверка главной страницы
+GET http://localhost:3000/
+
+### Проверка здоровья сервера
+GET http://localhost:3000/health
+
+### Получить всех пользователей
+GET http://localhost:3000/api/users
+
+### Получить пользователей с фильтром
+GET http://localhost:3000/api/users?role=admin&search=Петр
+
+### Получить пользователя по ID
+GET http://localhost:3000/api/users/1
+
+### Создать пользователя
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+  "name": "Алексей Смирнов",
+  "email": "alex@example.com",
+  "role": "user"
+}
+
+### Обновить пользователя
+PUT http://localhost:3000/api/users/1
+Content-Type: application/json
+
+{
+  "name": "Иван Иванов (Обновлен)",
+  "role": "admin"
+}
+
+### Удалить пользователя
+DELETE http://localhost:3000/api/users/3
+
+### Получить все товары
+GET http://localhost:3000/api/products
+
+### Получить товары с фильтрацией
+GET http://localhost:3000/api/products?category=electronics&inStock=true&maxPrice=40000
+
+### Создать товар
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+  "name": "Монитор",
+  "price": 15000,
+  "category": "electronics"
+}
