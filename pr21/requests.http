@@ -1,0 +1,48 @@
+### 1. Получить все книги (базовый запрос)
+GET http://localhost:3000/api/books
+
+### 2. Получить книги с фильтрацией и пагинацией
+GET http://localhost:3000/api/books?author=Иван&genre=Программирование&page=1&limit=5
+
+### 3. Получить книгу по ID
+GET http://localhost:3000/api/books/1
+
+### 4. Создать новую книгу
+POST http://localhost:3000/api/books
+Content-Type: application/json
+
+{
+  "title": "Чистый код",
+  "author": "Роберт Мартин",
+  "year": 2008,
+  "isbn": "978-0132350884",
+  "genre": "Программирование"
+}
+
+### 5. Полное обновление книги (PUT)
+PUT http://localhost:3000/api/books/2
+Content-Type: application/json
+
+{
+  "title": "Чистый код (2-е издание)",
+  "author": "Роберт Мартин",
+  "year": 2019,
+  "isbn": "978-0132350884",
+  "genre": "Программирование",
+  "available": false
+}
+
+### 6. Частичное обновление книги (PATCH)
+PATCH http://localhost:3000/api/books/2
+Content-Type: application/json
+
+{
+  "available": true,
+  "year": 2020
+}
+
+### 7. Удалить книгу
+DELETE http://localhost:3000/api/books/1
+
+### 8. Проверка обработки 404 (несуществующая книга)
+GET http://localhost:3000/api/books/999
